@@ -39,8 +39,8 @@ const Home_landing = () => {
           >
             {slides?.map((item,index) => {
               return (
-                <SwiperSlide>
-                  <Image src={item} alt="slideImage" key={index} />
+                <SwiperSlide key={index}>
+                  <Image src={item} alt="slideImage" />
                 </SwiperSlide>
               );
             })}

@@ -27,7 +27,7 @@ const Nav_swiper = ({ data }) => {
             </a>
           </li>
           <li className="flex items-center ">
-            {data.map((item, index) => {
+            {data?.map((item, index) => {
               return (
                 <a
                   key={index}

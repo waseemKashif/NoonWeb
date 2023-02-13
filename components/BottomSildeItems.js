@@ -17,9 +17,9 @@ const BottomSildeItems = () => {
         className="mySwiper "
         // pagination={true}
       >
-        {ItemsData.map((item) => {
+        {ItemsData?.map((item,index) => {
           return (
-            <SwiperSlide className="">
+            <SwiperSlide key={index}>
               <Image
                 src={item.show}
                 alt="slideImage"

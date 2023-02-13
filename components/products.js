@@ -43,7 +43,7 @@ const product = () => {
                   " "
                 ) : (
                   <Image
-                  key={index}
+                    key={index}
                     src={item}
                     alt="moreImage"
                     className="cursor-pointer"

@@ -37,7 +37,7 @@ const Home_landing = () => {
               disableOnInteraction: false,
             }}
           >
-            {slides?.map((item,index) => {
+            {slides?.map((item, index) => {
               return (
                 <SwiperSlide key={index}>
                   <Image src={item} alt="slideImage" />

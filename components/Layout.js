@@ -12,7 +12,7 @@ const Layout = ({ children }) => {
 
         <Secondary_nav className="bg-white" />
 
-        <Home_landing className="bg-white" />
+        <Home_landing className="bg-white " />
         <BottomSildeItems />
       </div>
       <div>

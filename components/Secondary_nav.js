@@ -1,6 +1,6 @@
-import React from 'react'
-import  DropdownComponent  from "./Dropdown";
-import Middle_nav from './Middle_nav';
+import React from "react";
+import DropdownComponent from "./Dropdown";
+import Middle_nav from "./Middle_nav";
 
 const Secondary_nav = () => {
   return (
@@ -10,6 +10,6 @@ const Secondary_nav = () => {
       {/* <DropdownComponent /> */}
     </div>
   );
-}
+};
 
-export default Secondary_nav
+export default Secondary_nav;

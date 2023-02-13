@@ -10,9 +10,8 @@ const BottomSildeItems = () => {
   return (
     <div>
       <Swiper
-      slidesPerView={10}
-      spaceBetween={20}
-
+        slidesPerView={10}
+        spaceBetween={20}
         navigation={true}
         modules={[Navigation]}
         className="mySwiper "
@@ -21,8 +20,11 @@ const BottomSildeItems = () => {
         {ItemsData.map((item) => {
           return (
             <SwiperSlide className="">
-                
-              <Image src={item.show} alt="slideImage"  className="pt-[30px]"/>
+              <Image
+                src={item.show}
+                alt="slideImage"
+                className="pt-[30px] cursor-pointer"
+              />
             </SwiperSlide>
           );
         })}

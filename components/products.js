@@ -2,13 +2,13 @@ import React from "react";
 import Image from "next/image";
 import { MegaDelsData } from "@/MoretoShop";
 import { MoreToShopData } from "@/MoretoShop";
-import focus from '../public/images/infoucs.avif'
-import oneMob from '../public/images/oneMob.avif'
-import samsung from '../public/images/samsung23.avif'
+import focus from "../public/images/infoucs.avif";
+import oneMob from "../public/images/oneMob.avif";
+import samsung from "../public/images/samsung23.avif";
 
 const product = () => {
   return (
-    <div className="grid md:grid-cols-3 sm:grid-cols-2 gap-3">
+    <div className="grid md:grid-cols-3 sm:grid-cols-2 gap-3 ">
       <div className="bg-white p-4 m-3">
         <Image src={MoreToShopData[0]} alt="title" />
 
@@ -53,10 +53,10 @@ const product = () => {
         </div>
       </div>
       <div className="bg-white p-4 m-3">
-        <Image src={focus} alt="foucsIcon"/>
+        <Image src={focus} alt="foucsIcon" />
         <div className="flex flex-col gap-4">
           <Image src={oneMob} alt="OnePlus image" className="cursor-pointer" />
-          <Image src={samsung} alt="samsung image" className="cursor-pointer"/>
+          <Image src={samsung} alt="samsung image" className="cursor-pointer" />
         </div>
       </div>
     </div>

@@ -1,7 +1,7 @@
-import Image from 'next/image'
-import uaeflag from '../public/images/uaeflag.svg'
-import logo from '../public/images/noon-logo.svg'
-import dropdwonarrow from "../public/images/dropdownArrow.svg"
+import Image from "next/image";
+import uaeflag from "../public/images/uaeflag.svg";
+import logo from "../public/images/noon-logo.svg";
+import dropdwonarrow from "../public/images/dropdownArrow.svg";
 const Navbar = () => {
   return (
     <div>
@@ -76,6 +76,6 @@ const Navbar = () => {
       </nav>
     </div>
   );
-}
+};
 
-export default Navbar
+export default Navbar;

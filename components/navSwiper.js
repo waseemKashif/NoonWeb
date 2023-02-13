@@ -1,7 +1,6 @@
 import React from "react";
 
-const Nav_swiper = ({data}) => {
-  
+const Nav_swiper = ({ data }) => {
   return (
     <div>
       <nav aria-label="Page navigation">

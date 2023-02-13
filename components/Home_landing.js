@@ -17,7 +17,6 @@ import slide7 from "../public/images/slide7.avif";
 import sideImg from "../public/images/sideSlideImg.png";
 import sideImg2 from "../public/images/sideSlideImg2.png";
 
-
 const Home_landing = () => {
   const slides = [slide1, slide2, slide3, slide4, slide5, slide6, slide7];
   return (
@@ -38,7 +37,7 @@ const Home_landing = () => {
               disableOnInteraction: false,
             }}
           >
-            {slides.map((item)=>{
+            {slides.map((item) => {
               return (
                 <SwiperSlide>
                   <Image src={item} alt="slideImage" />

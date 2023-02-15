@@ -29,7 +29,7 @@ const Navbar = () => {
             <input
               type="search"
               id="default-search"
-              class="block  w-full p-2 my-2 text-sm text-gray-900 focus:ring-1 rounded-lg bg-gray-50 focus:outline-none focus:ring focus:border-gray-500"
+              className="block  w-full p-2 my-2 text-sm text-gray-900 focus:ring-1 rounded-lg bg-gray-50 focus:outline-none focus:ring focus:border-gray-500"
               placeholder="What are you looking for?"
               required
             />
@@ -43,7 +43,7 @@ const Navbar = () => {
                 viewBox="0 0 24 24"
                 strokeWidth="1.5"
                 stroke="currentColor"
-                class="w-6 h-6"
+                className="w-6 h-6"
               >
                 <path
                   strokeLinecap="round"

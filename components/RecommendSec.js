@@ -32,7 +32,7 @@ const RecommendSec =()=>{
             },
             740: {
               slidesPerView: 5,
-              spaceBetween: 5,
+              spaceBetween:2,
             },
           }}
         >
@@ -40,7 +40,7 @@ const RecommendSec =()=>{
             return (
               <SwiperSlide
                 key={index}
-                className="mx-5 bg-gray-900 flex flex-col justify-start pb-5  "
+                className=" bg-gray-900 flex flex-col justify-start pb-5  "
               >
                 <Image
                   src={item.view}

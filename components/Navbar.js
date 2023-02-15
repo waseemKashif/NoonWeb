@@ -2,30 +2,32 @@ import Image from "next/image";
 import uaeflag from "../public/images/uaeflag.svg";
 import logo from "../public/images/noon-logo.svg";
 import dropdwonarrow from "../public/images/dropdownArrow.svg";
+import UserIcon from "../public/images/userIconNav.svg"
+import cartIcon from "../public/images/cartIconNav.svg"
 const Navbar = () => {
   return (
     <div>
-      <nav className="bg-yellow-300 p-4 ">
+      <nav className="navBarSet p-1 ">
         <ul className="flex flex-row    flex-wrap sm:flex-nowrap">
           <Image
             src={logo}
             alt="logo"
             height={100}
             width={100}
-            className="order-3 sm:order-1"
+            className="order-2 sm:order-1 p-2"
           />
-          <ul className="flex items-center px-2 overflow-hidden order-first sm:order-2 w-fit cursor-pointer ">
+          <ul className="flex items-center px-2 overflow-hidden order-3 sm:order-2 w-fit cursor-pointer ">
             <li className="px-2">
               <Image src={uaeflag} alt="flag" />
             </li>
-            <li className="whitespace-nowrap text-gray-900 text-xl font-normal hover:text-gray-600">
+            <li className="whitespace-nowrap text-black text-md font-normal hover:text-gray-600">
               Deviver to
             </li>
             <li>
               <Image src={dropdwonarrow} alt="arrow" />
             </li>
           </ul>
-          <div className="flex-1 px-2 order-last sm:order-3 ">
+          <div className="flex-1 px-2 sm:px-4 md:px-5 order-last sm:order-3 ">
             <input
               type="search"
               id="default-search"
@@ -34,42 +36,22 @@ const Navbar = () => {
               required
             />
           </div>
-          <div className="divide-x divide-gray-600 flex items-center order-2 sm:order-last">
-            <div className="flex px-2 flex-nowrap cursor-pointer hover:text-gray-600 ">
-              <p className="font-medium pr-2">Sign In</p>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                strokeWidth="1.5"
-                stroke="currentColor"
-                className="w-6 h-6"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z"
-                />
-              </svg>
+          <div className="divide-x divide-gray-400 flex items-center order-1 sm:order-last  lg:text-base text-sm">
+            <div className="flex px-3 flex-nowrap cursor-pointer hover:text-gray-600 ">
+              <p className="font-small sm:pr-2 pr-1 ">العربية</p>
             </div>
-            <div className="p-2">
-              <div className="flex cursor-pointer hover:text-gray-600">
-                <p className="font-medium pr-2">Cart</p>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  strokeWidth={1.5}
-                  stroke="currentColor"
-                  className="w-6 h-6"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z"
-                  />
-                </svg>
-              </div>
+            <div className="flex px-3 flex-nowrap cursor-pointer hover:text-gray-600 ">
+              <p className="font-medium  pr-1 sm:pr-2">Sign In</p>
+              <span>
+                <Image src={UserIcon} alt="svgIcon" width={20} height={20} />
+              </span>
+            </div>
+
+            <div className="flex flex-nowrap  cursor-pointer hover:text-gray-600 px-3">
+              <p className="font-medium pr-1 sm:pr-2">Cart</p>
+              <span>
+                <Image src={cartIcon} alt="cartIcon" />
+              </span>
             </div>
           </div>
         </ul>

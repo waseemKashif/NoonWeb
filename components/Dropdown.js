@@ -26,13 +26,13 @@ const DropdownComponent = () => {
         <button
           id="dropdownDefaultButton"
           data-dropdown-toggle="dropdown"
-          className="text-blue-900  focus:outline-none  font-bold  text-sm px-4 py-2.5 text-center inline-flex items-center whitespace-nowrap "
+          className=" DropdownColor focus:outline-none  font-bold  text-sm px-4 py-2.5 text-center inline-flex items-center whitespace-nowrap "
           type="button"
           onClick={() => setShow(!show)}
         >
           All Catagories
           <svg
-            className="w-5 h-5 ml-2 text-blue-900 font-bold"
+            className="w-5 h-5 ml-2 DropdownColor font-bold"
             aria-hidden="true"
             fill="none"
             stroke="currentColor"

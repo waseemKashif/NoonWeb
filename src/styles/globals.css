@@ -74,3 +74,9 @@ body {
 .swiper-button-disabled{
   visibility: hidden;
 }
+.navBarSet{
+  background-color: #feee00;
+}
+.DropdownColor{
+  color: rgb(56 102 223) !important;
+}

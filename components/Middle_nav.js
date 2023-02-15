@@ -25,7 +25,7 @@ const Middle_nav = () => {
     "SELL ON NOON",
   ];
   return (
-    <div className=" flex flex-row  justify-center items-center  flex-wrap sm:flex-nowrap h-full  w-full  ">
+    <div className=" flex flex-row  bg-gray-50 justify-center items-center divide-x  flex-wrap sm:flex-nowrap h-full  w-full  ">
       <DropdownComponent className="order-second sm:order-first" />
       <Swiper
         slidesPerView={7}
@@ -34,36 +34,46 @@ const Middle_nav = () => {
         modules={[Navigation]}
         className="middleSwiper sm:flex-1 order-first sm:order-2 flex-nowrap overflow-hidden "
         breakpoints={{
-          320:{
-            slidesPerView:2,
-            spaceBetween:10
+          320: {
+            slidesPerView: 3,
+            spaceBetween: 5,
           },
-          480:{
-            slidesPerView:4,
-            spaceBetween:5
+          580: {
+            slidesPerView: 3,
+            spaceBetween: 2,
           },
-           740: {
-      slidesPerView: 6,
-      spaceBetween: 2
-    }
+          740: {
+            slidesPerView: 4,
+            spaceBetween: 2,
+          },
+          840: {
+            slidesPerView: 5,
+            spaceBetween: 2,
+          },
+          960: {
+            slidesPerView: 7,
+            spaceBetween: 2,
+          },
         }}
       >
         {ItemsData?.map((item, index) => {
           return (
             <SwiperSlide
               key={index}
-              className="flex  sm:text-[10px] p-2 whitespace-nowrap cursor-pointer hover:bg-gray-200 mySwiperSlide md:font-semibold text-sm sm:text-lg "
+              className="flex bg-gray-50  sm:text-[10px] p-2 whitespace-nowrap cursor-pointer hover:bg-gray-200  mySwiperSlide md:font-bold text-xs sm:text-sm "
             >
               {item}
             </SwiperSlide>
           );
         })}
       </Swiper>
-      <Image
-        src={grovery}
-        alt="logogif"
-        className="md:w-52 sm:w-40 xs:w-20 h-8 px-2 order-last "
-      />
+      <div className="order-last">
+        <Image
+          src={grovery}
+          alt="logogif"
+          className="lg:w-44 md:40 sm:w-24 xs:w-12 h-5 px-2 pb-1 sm:pb-0  "
+        />
+      </div>
     </div>
   );
 };

@@ -24,12 +24,12 @@ const Home_landing = () => {
       <div>
         <Image src={listItems} alt="items" />
       </div>
-      <div className=" flex sm:flex-nowrap h-[100%] md:w-[113%] lg:w-[117%] sm:w-[120%] bg-white">
-        <div className=" md:w-[65%] sm:w-[50%] w-full h-auto ">
+      <div className=" bg-white">
+        <div className=" flex justify-start  w-full h-full">
           <Swiper
             navigation={true}
             modules={[Navigation, Autoplay]}
-            className="mySwiper "
+            className="middleSwiper "
             allowSlideNext={true}
             pagination={true}
             freeMode={true}
@@ -45,15 +45,15 @@ const Home_landing = () => {
               );
             })}
           </Swiper>
-        </div>
         <div className=" sm:flex hidden ">
           <Image
             src={sideImg}
             alt="SideImage"
-            className="h-100% w-auto md:h-auto"
+            
           />
 
-          <Image src={sideImg2} alt="SideImg2" className="h-100% w-auto" />
+          <Image src={sideImg2} alt="SideImg2"  />
+        </div>
         </div>
       </div>
     </div>

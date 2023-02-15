@@ -3,6 +3,7 @@ import Secondary_nav from "./Secondary_nav";
 import Home_landing from "./Home_landing";
 import BottomSildeItems from "./BottomSildeItems";
 import Products from "./products";
+import RecommendSec from './RecommendSec';
 
 const Layout = ({ children }) => {
   return (
@@ -17,6 +18,9 @@ const Layout = ({ children }) => {
       </div>
       <div>
         <Products />
+      </div>
+      <div>
+        <RecommendSec />
       </div>
       {children}
     </div>
